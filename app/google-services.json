@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "664140370463",
+    "firebase_url": "https://centromedico-8466d.firebaseio.com",
+    "project_id": "centromedico-8466d",
+    "storage_bucket": "centromedico-8466d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664140370463:android:0457bdce6d63c15f52bb2a",
+        "android_client_info": {
+          "package_name": "com.example.centromedico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664140370463-hc4bttevr1uo15hu3a4bnojrt8kn02sn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.centromedico",
+            "certificate_hash": "6c18d7713a992c27cb5b5e4a493efa849f41921c"
+          }
+        },
+        {
+          "client_id": "664140370463-qv0ccertt9hd7t7pplsqa9ut7s9p16e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPrTszsFeE5tuX_TWuWLLLHxkSWlmHkHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664140370463-qv0ccertt9hd7t7pplsqa9ut7s9p16e5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

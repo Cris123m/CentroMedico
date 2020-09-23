@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Centro Médico</string>
+    <string name="facebook_app_id">642798193312116</string>
+    <string name="fb_login_protocol_scheme">fb642798193312116</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history_content">Historia del campeonato descripción</string>
+    <string name="title_activity_calendario">CalendarioActivity</string>
+    <string name="tab_text_1">Fecha 1</string>
+    <string name="tab_text_2">Fecha 2</string>
+    <string name="title_activity_clinicas">ClinicasActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Atrás</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_posiciones">PosicionesActivity</string>
+    <string name="title_activity_goleadores">GoleadoresActivity</string>
+    <string name="title_activity_estadios_maps">Map</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

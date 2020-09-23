@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pacientes_nav_graph"
+    app:startDestination="@id/PacienteFragment">
+
+    <fragment
+        android:id="@+id/PacienteFragment"
+        android:name="com.example.centromedico.fragments.PacientesFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_pacientes">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/AgregarPacienteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AgregarPacienteFragment"
+        android:name="com.example.centromedico.fragments.AgregarPacienteFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_agregar_paciente">
+
+        <action
+            android:id="@+id/action_AgregarPacienteFragment_to_PacienteFragment"
+            app:destination="@id/PacienteFragment" />
+    </fragment>
+</navigation>
