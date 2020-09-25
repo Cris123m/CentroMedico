@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.centromedico.model.DetalleHistoriaClinicaModel;
 import com.example.centromedico.model.HistoriaClinicaModel;
 
 import java.util.List;
@@ -29,10 +30,14 @@ public class HistoriaClinicaRecyclerViewAdapter extends RecyclerView.Adapter<His
         }
     }
 
-    public List<HistoriaClinicaModel> historiaClinicaLista;
+    public List<DetalleHistoriaClinicaModel> detalleHistoriaClinicaLista;
 
-    public HistoriaClinicaRecyclerViewAdapter(List<HistoriaClinicaModel> historiaClinicaLista) {
+    /*public HistoriaClinicaRecyclerViewAdapter(List<HistoriaClinicaModel> historiaClinicaLista) {
         this.historiaClinicaLista = historiaClinicaLista;
+    }*/
+
+    public HistoriaClinicaRecyclerViewAdapter(List<DetalleHistoriaClinicaModel> detalleHistoriaClinicaLista) {
+        this.detalleHistoriaClinicaLista = detalleHistoriaClinicaLista;
     }
 
     @Override
@@ -44,18 +49,19 @@ public class HistoriaClinicaRecyclerViewAdapter extends RecyclerView.Adapter<His
 
     @Override
     public void onBindViewHolder(@NonNull HistoriaClinicaRecyclerViewAdapter.ViewHolder holder, int position) {
-        holder.txtNPaciente.setText(historiaClinicaLista.get(position).getPrimerNombre() + " "
-                + historiaClinicaLista.get(position).getSegundoNombre() + " "
-                + historiaClinicaLista.get(position).getPrimerApellido() + " "
-                + historiaClinicaLista.get(position).getSegundoApellido());
-        holder.txtNomClinica.setText(historiaClinicaLista.get(position).getClinica().getNombre());
-        holder.txtNumPaciente.setText("Historia: " + Integer.toString(historiaClinicaLista.get(position).getHistoriaClinica()));
-        holder.txtIdentificacion.setText("Identificación: " + historiaClinicaLista.get(position).getCedula());
+        holder.txtNPaciente.setText(detalleHistoriaClinicaLista.get(position).getHistoriaClinica().getPaciente().getPrimerNombre() + " "
+                + detalleHistoriaClinicaLista.get(position).getHistoriaClinica().getPaciente().getSegundoNombre() + " "
+                + detalleHistoriaClinicaLista.get(position).getHistoriaClinica().getPaciente().getPrimerApellido() + " "
+                + detalleHistoriaClinicaLista.get(position).getHistoriaClinica().getPaciente().getSegundoApellido());
+        holder.txtNumHistoria.setText("Historia: " +detalleHistoriaClinicaLista.get(position).getHistoriaClinica().getIdHistoriaClinica());
+        holder.txtEspecialidad.setText("Especialidad: " +detalleHistoriaClinicaLista.get(position).getMedico().getEspecialidad());
+        holder.txtProcedimiento.setText("Procedimiento: " + detalleHistoriaClinicaLista.get(position).getProcedimiento());
+        holder.txtDetalle.setText("Detalle: " + detalleHistoriaClinicaLista.get(position).getDetalle());
         //holder.logoClinica.setImageResource();
     }
 
     @Override
     public int getItemCount() {
-        return historiaClinicaLista.size();
+        return detalleHistoriaClinicaLista.size();
     }
 }

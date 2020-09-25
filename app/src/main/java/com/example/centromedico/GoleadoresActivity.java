@@ -17,6 +17,10 @@ public class GoleadoresActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         final int idMenu = extras.getInt("idMenu");
         switch (idMenu){
+            case 4:
+                setContentView(R.layout.activity_historia_clinica);
+                this.setTitle("Historia Clínica");
+                break;
             case 5:
                 setContentView(R.layout.activity_medico);
                 this.setTitle("Medicos");

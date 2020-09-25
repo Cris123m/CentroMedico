@@ -47,8 +47,9 @@ public class MenuActivity extends AppCompatActivity implements IComunicaFragment
     }
 
     @Override
-    public void verTablaPosiciones() {
-        Intent intent = new Intent(this,PosicionesActivity.class);
+    public void verHistoriaClinica() {
+        Intent intent = new Intent(this,GoleadoresActivity.class);
+        intent.putExtra("idMenu",4);
         startActivityForResult(intent, 0);
     }
 

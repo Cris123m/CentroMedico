@@ -4,7 +4,7 @@ public interface IComunicaFragment {
     public void verHistoria();
     public void verCalendario();
     public void verClinicas();
-    public void verTablaPosiciones();
+    public void verHistoriaClinica();
     public void verGoleadores();
     public void verSanciones();
     public void verPacientes();
