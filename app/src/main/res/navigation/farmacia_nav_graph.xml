@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/farmacia_nav_graph"
+    app:startDestination="@id/FarmaciaFragment">
+
+    <fragment
+        android:id="@+id/FarmaciaFragment"
+        android:name="com.example.centromedico.fragments.FarmaciaFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_farmacia"/>
+
+</navigation>

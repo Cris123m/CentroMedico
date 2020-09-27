@@ -26,8 +26,8 @@ public class GoleadoresActivity extends AppCompatActivity {
                 this.setTitle("Medicos");
                 break;
             case 6:
-                setContentView(R.layout.activity_sanciones);
-                this.setTitle("Sanciones");
+                setContentView(R.layout.activity_farmacia);
+                this.setTitle("Farmacia");
                 break;
             case 7:
                 setContentView(R.layout.activity_pacientes);

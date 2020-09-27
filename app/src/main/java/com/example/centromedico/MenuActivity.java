@@ -61,6 +61,13 @@ public class MenuActivity extends AppCompatActivity implements IComunicaFragment
     }
 
     @Override
+    public void verFarmacia() {
+        Intent intent = new Intent(this,GoleadoresActivity.class);
+        intent.putExtra("idMenu",6);
+        startActivityForResult(intent, 0);
+    }
+
+    @Override
     public void verSanciones() {
         Intent intent = new Intent(this,GoleadoresActivity.class);
         intent.putExtra("idMenu",6);
