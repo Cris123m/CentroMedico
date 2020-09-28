@@ -32,7 +32,7 @@ public class InicioFragment extends Fragment {
 
     View vista;
     Activity actividad;
-    CardView cardHistoria,cardCalendario,cardClinicas,cardHistoriaClinica,cardGoleadores,cardFarmacia,cardPacientes,cardSalir;
+    CardView cardHistoria,cardCalendario,cardClinicas,cardHistoriaClinica,cardGoleadores,cardFarmacia,cardPacientes,cardUbicacion,cardSalir;
     IComunicaFragment interfaceComunicaFragment;
 
     public InicioFragment() {
@@ -78,6 +78,7 @@ public class InicioFragment extends Fragment {
         cardGoleadores=vista.findViewById(R.id.cardGoleadores);
         cardFarmacia=vista.findViewById(R.id.cardFarmacia);
         cardPacientes=vista.findViewById(R.id.cardPacientes);
+        cardUbicacion=vista.findViewById(R.id.cardUbicacion);
         cardSalir=vista.findViewById(R.id.cardSalir);
 
         eventosMenu();
@@ -133,6 +134,13 @@ public class InicioFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 interfaceComunicaFragment.verPacientes();
+            }
+        });
+
+        cardUbicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                interfaceComunicaFragment.verUbicacion();
             }
         });
 

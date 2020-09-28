@@ -41,8 +41,9 @@ public class EstadiosMapsActivity extends FragmentActivity implements OnMapReady
 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
-        LatLng estadio = new LatLng(0.0359235,-78.1455172);
-        mMap.addMarker(new MarkerOptions().position(estadio).title("Marcador en estadio"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(estadio));
+        LatLng estadio = new LatLng(0.0336551,-78.1464063);
+        float zoomLevel = 16.0f; //This goes up to 21
+        mMap.addMarker(new MarkerOptions().position(estadio).title("Marcador en clínica"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(estadio, zoomLevel));
     }
 }

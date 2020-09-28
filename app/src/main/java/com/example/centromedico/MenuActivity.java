@@ -82,6 +82,13 @@ public class MenuActivity extends AppCompatActivity implements IComunicaFragment
     }
 
     @Override
+    public void verUbicacion() {
+        Intent intent = new Intent(this,EstadiosMapsActivity.class);
+        intent.putExtra("idMenu",8);
+        startActivityForResult(intent, 0);
+    }
+
+    @Override
     public void Salir() {
         Intent intent = new Intent(this,MainActivity.class);
         intent.putExtra("idMenu",false);

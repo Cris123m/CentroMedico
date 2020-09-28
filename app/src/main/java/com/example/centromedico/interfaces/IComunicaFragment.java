@@ -9,5 +9,6 @@ public interface IComunicaFragment {
     public void verGoleadores();
     public void verSanciones();
     public void verPacientes();
+    public void verUbicacion();
     public void Salir();
 }
